@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 70vw;
+    background-color: rgb(103, 166, 166);
+    margin: auto;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    height: 70vh;
+    margin-top: 100px;
+    background-color: rgb(159, 198, 198);
+    border-radius: 10px 0px 25px 0px;
+}
+
+h1 {
+    color: #333;
+}
+
+.options {
+    margin: 20px;
+}
+
+button {
+    background-color: #2a8e11;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 18px;
+    border-radius: 10px 0px 10px 0px;
+}
+
+.challenge {
+    width: 60vw;
+    margin: auto;
+    background-color: rgb(164, 214, 214);
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    padding: 20px;
+    border-radius: 30px 5px 30px 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
