@@ -15,7 +15,7 @@
 
 ## Qualifications: Pursuing 4th year B. Tech
 
-Welcome to the course report for the [Course Name]! This README document provides an overview of the course, its mini projects and final project.
+Welcome to the course report for the FULL STACK DEVELOPMENT! This README document provides an overview of the course, its mini projects and final project.
 
 ### Mini Projects and Final Project
 
