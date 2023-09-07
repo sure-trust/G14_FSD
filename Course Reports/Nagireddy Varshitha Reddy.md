@@ -23,5 +23,5 @@ Below is a table summarizing the mini projects and final project completed durin
 
 | Description                               | Link                                    |
 |-------------------------------------------|-----------------------------------------|
-| Mini Projects: [Netflix Website]          | [click here]  (https://github.com/sure-trust/G14_FSD/tree/main/Mini%20Projects/VARSHITHA%20REDDY/Netflix-Clone-main)                       |
-| Final Project: [Nike Store(Ecommerce)]     | [click here] (https://github.com/sure-trust/G14_FSD/tree/main/Final%20Capstone%20Project/VARSHITHA%20REDDY/one)                        |
+| Mini Projects: [Netflix Website]          | [click here](https://github.com/sure-trust/G14_FSD/tree/main/Mini%20Projects/VARSHITHA%20REDDY/Netflix-Clone-main)                       |
+| Final Project: [Nike Store(Ecommerce)]     | [click here](https://github.com/sure-trust/G14_FSD/tree/main/Final%20Capstone%20Project/VARSHITHA%20REDDY/one)                        |
