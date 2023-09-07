@@ -31,7 +31,7 @@ To enroll in the Full Stack Development, please visit the official SURE Trust we
 |MEGHANA NUTHANAPATI|[click here](link)|
 |MOHAMMED ISHAQ|[click here](link)|
 |MOHAN G|[click here](link)|
-|MUSALI UMESH KUMAR REDDY|[click here](link)|
+|MUSALI UMESH KUMAR REDDY|[click here](https://github.com/sure-trust/G14_FSD/blob/main/Course%20Reports/Musali%20Umesh%20Kumar%20Reddy.md)|
 |NV NAVEEN RAJ|[click here](link)|
 |RASHMI N|[click here](link)|
 |SAMBHANA DURGA|[click here](link)|
