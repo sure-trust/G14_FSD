@@ -23,5 +23,5 @@ Below is a table summarizing the mini projects and final project completed durin
 
 | Description                               | Link                                    |
 |-------------------------------------------|-----------------------------------------|
-| Mini Projects: [Project Description]     | [Click here]()                         |
+| Mini Projects: Netflix-clone     | [Click here](https://github.com/SHAIK-SAYED-BASHA/G14_FSD/tree/main/Mini%20Projects/SHAIK%20SAYED%20BASHA)                         |
 | Final Project: TO-DO LIST     | [Click here](https://github.com/SHAIK-SAYED-BASHA/G14_FSD/tree/main/Final%20Capstone%20Project/SHAIK%20SAYED%20BASHA)                       |
