@@ -13,7 +13,7 @@
 
 ## Name: Nagireddy Varshitha Reddy
 
-## Qualifications: Pursuing $th year Btech
+## Qualifications: Pursuing 4th year Btech
 
 Welcome to the course report for the Full Stack Development! This README document provides an overview of the course, its mini projects and final project.
 
@@ -24,4 +24,4 @@ Below is a table summarizing the mini projects and final project completed durin
 | Description                               | Link                                    |
 |-------------------------------------------|-----------------------------------------|
 | Mini Projects: [Netflix Website]          | [click here]  (https://github.com/sure-trust/G14_FSD/tree/main/Mini%20Projects/VARSHITHA%20REDDY/Netflix-Clone-main)                       |
-| Final Project: [Nike Store(Ecommerce]     | [click here] (https://github.com/sure-trust/G14_FSD/tree/main/Final%20Capstone%20Project/VARSHITHA%20REDDY/one)                        |
+| Final Project: [Nike Store(Ecommerce)]     | [click here] (https://github.com/sure-trust/G14_FSD/tree/main/Final%20Capstone%20Project/VARSHITHA%20REDDY/one)                        |
