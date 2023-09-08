@@ -6,16 +6,16 @@
 
 
 <h3 align="center">SURE Trust - Skill Upgradation for Rural-youth Empowerment Trust</h3>
-  <h2> Course Name </h2>
+  <h2> Full Stack Development</h2>
 </div>
 
 # Course Report
 
-## Name: [Your Name]
+## Name: Rashmi.N
 
-## Qualifications: [Your Qualifications]
+## Qualifications: Pursuing 4th year Btech
 
-Welcome to the course report for the [Course Name]! This README document provides an overview of the course, its mini projects and final project.
+Welcome to the course report for the Full Stack Development! This README document provides an overview of the course, its mini projects and final project.
 
 ### Mini Projects and Final Project
 
@@ -23,5 +23,5 @@ Below is a table summarizing the mini projects and final project completed durin
 
 | Description                               | Link                                    |
 |-------------------------------------------|-----------------------------------------|
-| Mini Projects: [Project Description]     | [Project Link]                         |
-| Final Project: [Project Description]     | [Project Link]                         |
+| Mini Projects: [Netflix websit]           | [click here](https://github.com/sure-trust/G14_FSD/tree/main/Mini%20Projects/RASHMI%20N/net)                                        |
+| Final Project: [Drawing app]              | [click here](https://github.com/sure-trust/G14_FSD/tree/main/Final%20Capstone%20Project/RASHMI%20N/ras)                             |
