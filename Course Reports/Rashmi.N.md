@@ -23,6 +23,5 @@ Below is a table summarizing the mini projects and final project completed durin
 
 | Description                               | Link                                    |
 |-------------------------------------------|-----------------------------------------|
-| Mini Projects: [Netflix websit]           | [click here](https://github.com/sure-trust/G14_FSD/tree/main/Mini%20Projects/
-RASHMI%20N/net) |
-| Final Project: [Drawing app]              | [click here](https://github.com/sure-trust/G14_FSD/tree/main/Final%20Capstone%20Project/         RASHMI%20N/ras) |
+| Mini Projects: [Netflix websit]           | [click here] (https://github.com/sure-trust/G14_FSD/tree/main/Mini%20Projects/RASHMI%20N/net)                           |
+| Final Project: [Drawing app]              | [click here] (https://github.com/sure-trust/G14_FSD/tree/main/Final%20Capstone%20Project/RASHMI%20N/ras)                            |
