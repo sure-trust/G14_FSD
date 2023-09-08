@@ -24,10 +24,10 @@ To enroll in the Full Stack Development, please visit the official SURE Trust we
 |ATHMAKURU KAVYA|[click here](link)|
 |ABHISHT DUBEY|[click here](link)|
 |BUKKAPATNAM SUNIL|[click here](link)|
-|CHENNU GIRISHKUMAR|[click here](link)|
+|CHENNU GIRISHKUMAR|[click here](https://github.com/sure-trust/G14_FSD/blob/main/Course%20Reports/Chennu%20Kirishkumar.md)|
 |DURGA VATTURI|[click here](link)|
 |HIMANSHU CHOBEY|[click here](link)|
-|M SURESH|[click here](link)|
+|M SURESH|[click here](https://github.com/sure-trust/G14_FSD/blob/main/Course%20Reports/M%20Suresh%20Raju.md)|
 |MEGHANA NUTHANAPATI|[click here](link)|
 |MOHAMMED ISHAQ|[click here](link)|
 |MOHAN G|[click here](link)|
@@ -35,13 +35,13 @@ To enroll in the Full Stack Development, please visit the official SURE Trust we
 |NV NAVEEN RAJ|[click here](link)|
 |RASHMI N|[click here](link)|
 |SAMBHANA DURGA|[click here](link)|
-|SHAIK SAYED BASHA|[click here](link)|
+|SHAIK SAYED BASHA|[click here](https://github.com/sure-trust/G14_FSD/blob/main/Course%20Reports/Shaik%20Sayed%20Basha.md)|
 |SRI VENKATA RUKMINI|[click here](link)|
 |SUPRAGEETHIKA POLU|[click here](link)|
 |THIRUMALESH POWER|[click here](link)|
-|USHA SRI REDDY PEDDIREDDY|[click here](link)|
+|USHA SRI REDDY PEDDIREDDY|[click here](https://github.com/sure-trust/G14_FSD/blob/main/Course%20Reports/Peddireddy%20Ushasri%20Reddy.md)|
 |VANDANA CHAPANA|[click here](link)|
-|VARSHITHA REDDY|[click here](link)|
+|VARSHITHA REDDY|[click here](https://github.com/sure-trust/G14_FSD/blob/main/Course%20Reports/Nagireddy%20Varshitha%20Reddy.md)|
 
 
 
