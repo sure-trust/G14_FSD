@@ -7,6 +7,7 @@
 
 <h3 align="center">SURE Trust - Skill Upgradation for Rural-youth Empowerment Trust</h3>
   <h2>  Full Stack Development - G14 </h2>
+  
 </div>
 
 Welcome to the SURE Trust G14 Full Stack Development  Training repository. This repository serves as a central hub for all materials and resources related to the training course during the fourteenth batch of training Full Stack Development Training course.
