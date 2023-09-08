@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color: #191414;
+    font-family: 'Ubuntu', sans-serif;
+
+
+}
+
+*{ 
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: rgb(7, 16, 11);
+    color: white;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+.signin{
+margin-left: 70%;
+}
+button{
+    float: right;
+background-color: rgb(242, 241, 243);
+padding: 30%;
+border-radius:30px ;
+}
+button:hover{
+    background-color: black;
+    color: aliceblue;
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container{
+    min-height: 72vh;
+    text-align: left;
+    background-color: #191414;
+    color: white;
+   font-family: 'Varela Round', sans-serif;
+   display: flex;
+   margin: 0px auto;
+   width: 90%;
+   border-radius: 12px;
+   padding: 34px;
+   background-image: url('music3.jpg');
+   background-size: cover;
+   background-position-y: center;
+   z-index: -2;
+}
+
+h1{
+    font-size: 350%;
+    color: azure;
+    z-index: 2;
+}
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 130px;
+    background-color: rgb(6, 6, 6);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.icons{
+    margin-top: 14px; 
+}
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw; 
+    cursor: pointer;
+}
+.songName{
+    font-size: 100%;
+}
+.songItemContainer{
+    margin-left: 3%;
+    margin-top: 74px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+.songItem{
+    width: 80%;
+    height: 80%;
+    background-color: #272121;
+    padding: 10px;
+    color: rgb(251, 249, 249);
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40%;
+    font-weight: 700;
+    font-size: 150%;
+}
+
+.songItem img{
+    width: 100%;
+    margin-bottom: 30%;
+}
+
+.timestamp{
+text-align: center;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+      background-color: rgb(233, 229, 229);
+    }
+  }
