@@ -6,14 +6,14 @@
 
 
 <h3 align="center">SURE Trust - Skill Upgradation for Rural-youth Empowerment Trust</h3>
-  <h2> Course Name </h2>
+  <h2>Full Stack Development</h2>
 </div>
 
 # Course Report
 
-## Name: [Your Name]
+## Name: Polu Supra Geethika
 
-## Qualifications: [Your Qualifications]
+## Qualifications: Pursuing B.Tech 4th year
 
 Welcome to the course report for the [Course Name]! This README document provides an overview of the course, its mini projects and final project.
 
@@ -23,5 +23,5 @@ Below is a table summarizing the mini projects and final project completed durin
 
 | Description                               | Link                                    |
 |-------------------------------------------|-----------------------------------------|
-| Mini Projects: [Project Description]     | [Project Link]                         |
-| Final Project: [Project Description]     | [Project Link]                         |
+| Mini Projects: [Netflix-Clone]     | [click Here](https://github.com/sure-trust/G14_FSD/tree/main/Mini%20Projects/SUPRAGEETHIKA%20POLU%20G14FSD)                       |
+| Final Project: [Jio-Mart-Clone]     | [Click Here](https://github.com/sure-trust/G14_FSD/tree/main/Final%20Capstone%20Project/SUPRAGEETHIKA%20POLU%20G14FSD)                         |
