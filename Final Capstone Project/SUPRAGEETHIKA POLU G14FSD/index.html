@@ -1,0 +1,2612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/683b4b40e3.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Home</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+
+      #nav_bar {
+        width: 100%;
+        height: 80px;
+        background-color: #008ecc;
+        display: flex;
+        position: fixed;
+      }
+      #menu {
+        color: white;
+        font-size: 40px;
+        margin-left: 120px;
+        margin-top: 20px;
+      }
+      h1 {
+        margin-left: 30px;
+        color: white;
+        margin-top: 20px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      #search {
+        height: 40px;
+        width: 700px;
+        background-color: white;
+        margin-left: 40px;
+        margin-top: 20px;
+        border-radius: 5px;
+        display: flex;
+      }
+      #search_menu {
+        color: rgb(7, 7, 7);
+        font-size: 20px;
+        margin-left: 40px;
+        margin-top: 5px;
+      }
+      #search_bar {
+        height: 30px;
+        width: 600px;
+        margin-left: 20px;
+        margin-top: 3px;
+        border-radius: 5px;
+        border: none;
+        background-color: transparent;
+        resize: none;
+        outline: none;
+      }
+      #search_button {
+        border: none;
+        background-color: transparent;
+        resize: none;
+        outline: none;
+        color: rgb(7, 7, 7);
+        font-size: 20px;
+        margin-right: 20px;
+        margin-bottom: 3px;
+      }
+
+      #signin_icon {
+        margin-left: 90px;
+        font-size: 25px;
+        border: none;
+        background-color: transparent;
+        outline: none;
+        color: white;
+      }
+      #signin_text {
+        font-size: 14px;
+        font-weight: bold;
+        border: none;
+        background-color: transparent;
+        outline: none;
+        color: white;
+      }
+      #cart_icon {
+        margin-left: 90px;
+        font-size: 20px;
+        border: none;
+        background-color: transparent;
+        resize: none;
+        outline: none;
+        color: white;
+      }
+      #cart_text {
+        font-weight: bold;
+        font-size: 14px;
+        border: none;
+        background-color: transparent;
+        resize: none;
+        outline: none;
+        color: white;
+      }
+     .navbar2 {
+        background-color: #ececed;
+        text-align: center;
+        position: fixed;
+        margin-top: 80px;
+        width: 100%;
+      }
+      .navbar2 ul {
+        display: flex;
+        list-style: none;
+        margin-left: 50px;
+      }
+      .navbar2 ul li {
+        width: 160px;
+        height: 40px;
+        text-align: center;
+        margin-top: 20px;
+      }
+      .navbar2 ul li a {
+        text-decoration: none;
+        color: black;
+        font-family: sans-serif;
+        font-weight: bolder;
+        font-size: 15px;
+      }
+      .navbar2 ul li i {
+        color: #878b9c;
+      }
+      #loction_icon {
+        display: flex;
+      }
+      #loction_icon p {
+        margin-bottom: 0;
+        margin-top: -25px;
+        margin-left: -10px;
+      }
+      #loction_icon i {
+        font-size: 30px;
+        color: #878b9c;
+      }
+      .menu_text:nth-child(1) {
+        margin-left: 70px;
+      }
+      .menu_text:nth-child(2) {
+        margin-left: -20px;
+      }
+      .menu_text:nth-child(3) {
+        margin-left: 20px;
+      }
+      .menu_text:nth-child(4) {
+        margin-left: 20px;
+      }
+      .menu_text:nth-child(5) {
+        margin-left: 10px;
+      }
+      .menu_text:nth-child(6) {
+        margin-left: -20px;
+      }
+      .menu_text:nth-child(7) {
+        margin-left: -20px;
+      }
+      .menu_text:nth-child(8) {
+        margin-left: -20px;
+      }
+      .menu_text:nth-child(9) {
+        margin-left: -60px;
+      }
+      .sub_menu_1 {
+        display: none;
+      }
+      .navbar2 ul li:hover .sub_menu_1 {
+        display: block;
+        position: absolute;
+        background-color: #ececed;
+      }
+      .navbar2 ul li:hover .sub_menu_1 ul {
+        display: block;
+        margin-left: 20px;
+        margin-top: 30px;
+        justify-content: center;
+        align-items: center;
+      }
+      .navbar2 ul li:hover .sub_menu_1 ul li {
+        background: transparent;
+        border-radius: 0;
+        text-align: left;
+
+        margin-top: 10px;
+        width: 250px;
+      }
+      .navbar2 ul li:hover .sub_menu_1 ul li a:hover {
+        color: lightskyblue;
+      }
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: white;
+        overflow: hidden;
+        transition: 0.5s;
+      }
+      #sidenav_home > a {
+        padding: 20px 8px 8px 20px;
+        text-decoration: none;
+        color: black;
+        display: block;
+        transition: 0.3s;
+      }
+      .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 25px;
+        margin-left: 70px;
+        color: white;
+        margin-top: 10px;
+      }
+      .myacc {
+        background-color: #008ecc;
+        height: 100px;
+      }
+      #hello_button {
+        display: flex;
+        border: none;
+        background-color: transparent;
+        resize: none;
+        outline: none;
+        color: white;
+        margin-left: 10px;
+      }
+      #hello_icon {
+        font-size: 25px;
+        margin-top: 18px;
+        margin-left: 5px;
+      }
+      #hello_text {
+        margin-left: 14px;
+        font-size: 15px;
+        margin-top: 25px;
+      }
+      #account {
+        display: flex;
+      }
+      .accdiv {
+        border: 1px solid white;
+        width: 150px;
+        height: 25px;
+        color: white;
+        text-align: center;
+        margin-left: 7px;
+        padding-top: 7px;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+      #order_box {
+        margin-left: 5px;
+      }
+      .line {
+        height: 5px;
+        width: 100%;
+        background-color: #ececed;
+        margin-top: 6px;
+      }
+      #sidenav_home {
+        overflow: scroll;
+        height: 600px;
+        top: 0;
+        left: 0;
+        background-color: white;
+      }
+      #sidenav_home > h4,
+      p {
+        padding: 20px 0px 0px 20px;
+        margin-right: 20px;
+      }
+      #playstore {
+        display: flex;
+        margin-left: 20px;
+        margin-top: 10px;
+      }
+      #slider {
+        overflow: hidden;
+      }
+      .slider > img {
+        margin-top: 150px;
+      }
+      #homeDelivery,
+      #winterFashion,
+      #afterWinter,
+      #handWash {
+        width: 99%;
+      }
+      #homeDelivery,
+      #handWash {
+        margin: 10px;
+      }
+      #winterFashion {
+        margin: -15px 10px 0 10px;
+      }
+      #afterWinter {
+        margin-top: -5px;
+        margin-left: 10px;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      footer {
+        background-color: #ededef;
+        margin-top: 20px;
+      }
+      footer p {
+        line-height: 20px;
+      }
+      #footerspan > p {
+        line-height: 0;
+      }
+      #footerspan ~ p {
+        line-height: 20px;
+      }
+      .footer-1 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 30px 100px 30px;
+      }
+      .footer-1 > div {
+        box-sizing: border-box;
+      }
+      #footerDiv3 {
+        width: 70%;
+        border-left: 1px solid gray;
+        padding-left: 30px;
+      }
+      #footerDiv1 a,
+      #footerDiv2 a,
+      #footerDiv3 p {
+        color: gray;
+      }
+      #footerDiv3 a {
+        color: #0b92ce;
+      }
+      .footer-1 p,
+      .footer-1 a {
+        font-size: 13px;
+        font-family: sans-serif;
+      }
+      #footerDiv1,
+      #footerDiv2 {
+        line-height: 20px;
+      }
+      .footer-1 h2 {
+        line-height: 20px;
+        font-size: 13px;
+        font-family: JioBold;
+      }
+
+      #copyRight {
+        display: flex;
+        justify-content: space-around;
+        font-size: 12px;
+        font-family: JioLight;
+        border-top: 1px solid gray;
+      }
+      .topCat {
+        margin-left: 40px;
+        font-size: 20px;
+        font-family: JioBold;
+      }
+      .topWomen {
+        margin-left: 25px;
+        font-size: 20px;
+        font-family: JioBold;
+      }
+      .womenFashion {
+        margin-top: 50px;
+      }
+      .womenFashion,
+      .AfterWomenFashion {
+        display: flex;
+      }
+      .AfterWomenFashion {
+        justify-content: center;
+        margin-left: 35px;
+        transition: transform .5s;
+        cursor: pointer;
+      }
+      /* .AfterWomenFashion:hover{
+        -ms-transform: scale(1.1);
+          transform: scale(1.1);
+      } */
+      .womenFashion > div {
+        margin-left: 30px;
+      }
+      .womenFashion > div > img {
+        border-radius: 10px;
+        width: 700px;
+        transition: transform .9s;
+        cursor: pointer;
+      }
+      .womenFashion>div>img:hover{
+        -ms-transform: scale(0.9);
+          transform: scale(0.9);
+      }
+      .AfterWomenFashion > div {
+        width: 270px;
+
+        margin: 15px 10px;
+        height: 350px;
+        border-radius: 10px;
+        outline: 1px solid lightgray;
+
+      }
+      .AfterWomenFashion > div > img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        transition: transform .5s;
+        cursor: pointer;
+
+      }
+      .AfterWomenFashion>div>img:hover{
+        -ms-transform: scale(1.11);
+          transform: scale(1.11);
+      }
+      .largeImageStart {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 430px);
+        grid-gap: 20px;
+        padding: 10px;
+        cursor: pointer;
+      }
+      .largeImageStart > div > img {
+        height: 100%;
+        width: 100%;
+      }
+      .hotDeals {
+        display: flex;
+        justify-content: center;
+        margin-left: -5px;
+      }
+      .hotDeals > div {
+        height: 300px;
+        width: 240px;
+        margin: 10px;
+        padding: 15px;
+        outline: 1px solid lightgray;
+      }
+      .hotDeals > div > img {
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        transition: transform .9s;
+      }
+      .hotDeals > div > img:hover{
+        -ms-transform: scale(1.11);
+          transform: scale(1.11);
+      }
+      .essential_main_box {
+        /* border:1px solid red; */
+        width: 100%;
+        margin-bottom: 20px;
+        margin: auto;
+      }
+      .essentials {
+        height: 250px;
+        /* border:1px solid red; */
+        width: 90%;
+        margin: auto;
+        display: flex;
+        margin-bottom: 20px;
+        cursor: pointer;
+      }
+      .essential_small_box {
+        width: 23.5%;
+        margin-right: 16px;
+        /* border: 1px solid black; */
+        border-top: 20px;
+        background-color: #efd6da;
+        border-radius: 20px;
+      }
+      .offer_tags {
+        width: 100%;
+        height: 24px;
+        background-size: 100%;
+        text-align: center;
+        padding: 8px 0px 0px;
+        color: white;
+        font-weight: bold;
+        margin-bottom: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url("https://www.jiomart.com/assets/version1638198149/smartweb/images/offer_bg.png");
+      }
+      b {
+        font-style: italic;
+      }
+      .essential_img {
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        text-align: center;
+        font-weight: bold;
+        transition: transform .9s;
+      }
+      .essential_img:hover {
+        -ms-transform: scale(1.1);
+  transform: scale(1.1);
+        /* font-size: 20px; */
+        /* shape-image-threshold: 300px; */
+        /* width:300px; */
+        /* inline-size: 300px; */
+        /* margin: auto;    */
+        /* image-rendering: auto;  */
+        /* box-sizing: 400px;         */
+      }
+      .tital_box {
+        /* border:1px solid red; */
+        width: 90%;
+        margin: auto;
+      }
+      .essential_small_box:hover {
+        /* box-shadow: rgba(12, 12, 12, 0.48) 6px 2px 16px 0px, rgba(253, 247, 247, 0.8) -6px -2px 16px 0px; */
+        box-shadow: 10px 5px 5px #a6a6a6;
+      }
+      .essential_name {
+        color: black;
+      }
+      .houshold_small_box {
+        width: 23.5%;
+        margin-right: 16px;
+        /* border: 1px solid black; */
+        border-top: 20px;
+        background-color: #c5f8c0;
+        border-radius: 20px;
+      }
+      .grocery_small_box {
+        width: 23.5%;
+        margin-right: 16px;
+        /* border: 1px solid black; */
+        border-top: 20px;
+        background-color: #bce1fe;
+        border-radius: 20px;
+      }
+
+      .essential_main_box {
+        /* border:1px solid red; */
+        width: 100%;
+        margin-bottom: 20px;
+        margin: auto;
+      }
+      .essentials {
+        height: 250px;
+        /* border:1px solid red; */
+        width: 90%;
+        margin: auto;
+        display: flex;
+        margin-bottom: 20px;
+        cursor: pointer;
+      }
+      .essential_small_box {
+        width: 23.5%;
+        margin-right: 16px;
+        /* border: 1px solid black; */
+        border-top: 20px;
+        background-color: #efd6da;
+        border-radius: 20px;
+      }
+      .offer_tags {
+        width: 100%;
+        height: 24px;
+        background-size: 100%;
+        text-align: center;
+        padding: 8px 0px 0px;
+        color: white;
+        font-weight: bold;
+        margin-bottom: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url("https://www.jiomart.com/assets/version1638198149/smartweb/images/offer_bg.png");
+      }
+      b {
+        font-style: italic;
+      }
+      .essential_img {
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        text-align: center;
+        font-weight: bold;
+        transition: transform .5s;
+      }
+      .essential_img:hover {
+        -ms-transform: scale(1.1); /* IE 9 */
+  /* -webkit-transform: scale(1.5); Safari 3-8 */
+        transform: scale(1.1);
+        /* font-size: 20px; */
+        /* shape-image-threshold: 300px; */
+        /* padding-bottom: 10px; */
+        /* inline-size: 300px; */
+        /* margin: auto;    */
+        /* image-rendering: auto;  */
+        /* box-sizing: 400px;         */
+      }
+      .tital_box {
+        /* border:1px solid red; */
+        width: 90%;
+        margin: auto;
+      }
+      .essential_small_box:hover {
+        /* box-shadow: rgba(12, 12, 12, 0.48) 6px 2px 16px 0px, rgba(253, 247, 247, 0.8) -6px -2px 16px 0px; */
+        box-shadow: 10px 5px 5px #a6a6a6;
+      }
+      .essential_name {
+        color: black;
+      }
+      .houshold_small_box {
+        width: 23.5%;
+        margin-right: 16px;
+        /* border: 1px solid black; */
+        border-top: 20px;
+        background-color: #c5f8c0;
+        border-radius: 20px;
+      }
+      .sliding ,.paytmOfr {
+        display: flex;
+        box-sizing: border-box;
+        height: 246px;
+        margin-left: 35px;
+        margin-right: 20px;
+      }
+      .sliding > div {
+        border-radius: 8px;
+        outline: 1px solid gray;
+        height: 80%;
+        padding: 10px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 5px;
+        width: 20%;
+      }
+      .sliding > div > img {
+        height: 70%;
+        width: 100%;
+      }
+      .sliding > div > p {
+        text-align: center;
+        padding-top: 30px;
+        font-size: 14px;
+        font-family: sans-serif;
+      }
+      .zImage>div>img{
+        height: 100%;
+        width: 100%;
+      }
+      .paytmOfr{
+        margin-bottom: 20px;
+      }
+      .paytmOfr>div{
+        height: 100%;
+        width: 750px;
+        margin-top: 10px;
+        margin-right: 10px;
+
+      }
+      .paytmOfr>div>img{
+        height: 100%;
+        width: 100%;
+      }
+      /* prajwalstyles */
+      .sllide2{
+        display: flex;
+        height: 310px;
+        min-width: 180px;
+        overflow-x:auto;
+
+      }
+      .d1{
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        height: 230px;
+        border-radius: 8px;
+        width: 180px;
+        margin-left: 20px;
+        margin-top: 20px;
+       padding: 15px;
+       cursor: pointer;
+
+      }
+      .d1>p{
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 10px;
+
+      }
+      .i2{
+        height: 160px;
+        width: 160px;
+        transition: transform .5s;
+        cursor: pointer;
+
+      }
+      .i1{
+        height: 220px;
+        width: 180px;
+        padding: 20px;
+        margin-left: 20px;
+        cursor: pointer;
+        transition: transform .5s;
+
+      }
+      .i1:hover{
+        -ms-transform: scale(1.1);
+         transform: scale(1.1);
+
+      }
+      .i2:hover{
+        -ms-transform: scale(1.1);
+         transform: scale(1.1);
+
+      }
+      .sllide{
+        height: 335px;
+            /* border: 1px solid red; */
+            display: flex;
+            /* min-width: 180px; */
+            overflow-x:auto;
+      }
+      .classic{
+            height: 340px;
+            /* border: 1px solid red; */
+            display: flex;
+
+        }
+        .one{
+            height: 312px;
+            width:200px;
+            /* border: 1px solid rgb(0, 14, 90); */
+            margin-right: 16px;
+            display: flex;
+
+        }
+        .container{
+           display: flex;
+            overflow-x:auto;
+
+ }
+ .container .one{
+     min-width: 180px;
+ }
+
+
+.indiv{
+
+    height: 310px;
+    width: 200px;
+}
+
+.btn,.btn2{height: 35px;
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    cursor: pointer;
+}
+.all{
+    height:320px ;
+    width: 185px;
+    margin-left: 20px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 10px;
+    margin-top:1px;
+    display: flex;
+    /* border: 1px solid red; */
+}
+
+.imgdiv{
+    width: 60%;
+    height: 50%;
+    display: flex;
+}
+.price{
+    height: 37px;
+    padding-left: 10px;
+    margin: 5px;
+
+}
+.mimg{
+    width: 120px;
+    padding-top: 30px;
+    height:auto;
+    cursor: pointer;
+}
+.hov:hover{
+    width:130px ;
+}
+.plus,.plus2{
+   border-radius: 5px;
+    line-height: 35px;
+    height: 100%;
+    width:170px;
+    text-align: left;
+    background-color: #008ecc;
+    color: white;
+    border: 0;
+    font-weight: bolder;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    padding-left: 10px;
+    cursor: pointer;
+    margin-right: 17px;
+}
+.inr-sign::before{content:"\20B9";}
+.p1{display: flex;}
+.p2{text-decoration: line-through;}
+.ic1{
+height: 100%;
+padding-top: 8px;
+padding-left:1px;
+}
+.ic2{
+height: 100%;
+width: 20px;
+padding-right: 10px;
+padding-top: 5px;
+}
+.name{
+    padding-left: 15px;
+padding-right:15px;
+font-family:sans-serif ;
+font-weight:600;
+font-size:15px;
+cursor: pointer;
+}
+
+.minus,.pluss,.pluss2,.minus2{display:none;
+border-radius: 20px;
+color: white;
+background-color: #008ecc;
+border: 0;
+font-size: 25px;
+height: 30px;
+width: 30px;}
+.m1{
+    border: 0;
+    font-size: 18px;
+    padding-top: 6px;
+    background-color: transparent;
+}
+.minus,.minus2{
+    margin-right: 10px;
+}
+.pluss,.pluss2{
+    margin-left: 10px;
+    margin-right: 12px;
+}
+.save{
+    color:#47bb47;
+    font-weight: bolder;
+    line-height: 2px;
+}
+      /* end */
+    </style>
+  </head>
+  <body>
+    <div id="nav_bar">
+      <i onclick="sidenav()" id="menu" class="fas fa-bars"></i>
+      <h1 onclick="home()">JioMart</h1>
+       <div id="search">
+        <input
+          id="search_bar"
+          type="text"
+          placeholder="Search essentials,grcoceries,and more...."
+        />
+        <button id="search_button">
+          <i id="search_menu" class="fas fa-list-ul"></i>
+        </button>
+      </div>
+      <button id="signin_icon" class="signin" onclick="signin()">
+        <i class="fas fa-user-alt"></i>
+      </button>
+      <button id="signin_text" class="signin" onclick="signin()">Sign up/ Sign in</button>
+      <button id="cart_icon" onclick="cart()"><i class="fas fa-shopping-cart"></i></button>
+      <button id="cart_text" onclick="cart()">Cart</button>
+    </div>
+    <div class="navbar2">
+      <ul class="menu">
+        <li id="loction_icon" class="menu_text">
+          <i id="loction_icon" class="fas fa-map-marker-alt"></i>
+          <p>Deliver to <br />516101</p>
+        </li>
+        <li class="menu_text">
+          <a href="#" onclick="product()">Fruits & Vegetables <i class="fas fa-chevron-down" ></i></a>
+          <div class="sub_menu_1">
+            <ul>
+              <li><a href="#" onclick="product()">Fresh Vegetables</a></li>
+              <li><a href="#" onclick="product()" >Fresh Fruits</a></li>
+              <li><a href="#" onclick="product()" >Premium Fruits</a></li>
+              <li><a href="#" onclick="product()" >Herbs and Seasoning</a></li>
+              <li><a href="#" onclick="product()" >Exotic Fruits & Vegetables</a></li>
+
+
+            </ul>
+          </div>
+        </li>
+        <li class="menu_text">
+          <a href="">Premium Fruits <i class="fas fa-chevron-down"></i></a>
+          <div class="sub_menu_1">
+            <ul>
+              <li><a href="">Apple & Pears</a></li>
+              <li><a href="">Avocado,Peach,Plum</a></li>
+              <li><a href="">Banana,Melons&Coconut</a></li>
+              <li><a href="">Cherries,Berries&Exotic Fruits</a></li>
+              <li><a href="">Citrus, Mango & Grapes</a></li>
+              <li><a href="">Dates</a></li>
+              <li><a href="">Gift,Assorted & XL Packs</a></li>
+              <li><a href="">Pomegranate,Papaya & Pineapple</a></li>
+              <li><a href="">Seasonal & Minor Fruits</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu_text">
+          <a href="">Home & Kitchen <i class="fas fa-chevron-down"></i></a>
+          <div class="sub_menu_1">
+            <ul>
+              <li><a href="">Bathroom & Laundry Accessories</a></li>
+              <li><a href="">Disposables</a></li>
+              <li><a href="">Furnishing</a></li>
+              <li><a href="">Furniture</a></li>
+              <li><a href="">Garden & Outdoor</a></li>
+              <li><a href="">Home Decor</a></li>
+              <li><a href="">Kitchenware</a></li>
+              <li><a href="">Prayer & Spiritual Needs</a></li>
+              <li><a href="">Tableware</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu_text">
+          <a href="">Fashion<i class="fas fa-chevron-down"></i></a>
+          <div class="sub_menu_1">
+            <ul>
+              <li><a href="">Men</a></li>
+              <li><a href="">Women</a></li>
+              <li><a href="">Boys</a></li>
+              <li><a href="">Girls</a></li>
+              <li><a href="">Junior Boys</a></li>
+              <li><a href="">Junior Girls</a></li>
+              <li><a href="">Infants</a></li>
+              <li><a href="">Tech</a></li>
+             </ul>
+          </div>
+        </li>
+        <li class="menu_text">
+          <a href="">Electronics <i class="fas fa-chevron-down"></i></a>
+          <div class="sub_menu_1">
+            <ul>
+              <li><a href="">Mobiles & Tablets</a></li>
+              <li><a href="">TV & Speaker</a></li>
+              <li><a href="">Home Appliances</a></li>
+              <li><a href="">Computers</a></li>
+              <li><a href="">Cameras</a></li>
+              <li><a href="">Kitchen Appliances</a></li>
+              <li><a href="">Personal Care & Grooming</a></li>
+              <li><a href="">Smart Devices</a></li>
+              <li><a href="">Gaming</a></li>
+              <li><a href="">Accessories</a></li>
+              <li><a href="">Smart Watch Accessories</a></li>
+             </ul>
+          </div>
+        </li>
+        <li class="menu_text">
+          <a href="">Beauty <i class="fas fa-chevron-down"></i></a>
+          <div class="sub_menu_1">
+            <ul>
+              <li><a href="">Make-Up</a></li>
+              <li><a href="">Hair</a></li>
+              <li><a href="">Skin Care</a></li>
+              <li><a href="">Fragrances</a></li>
+              <li><a href="">Personal Care</a></li>
+              <li><a href="">Mom & Baby</a></li>
+              <li><a href="">Men's Grooming</a></li>
+              <li><a href="">Tools & Appliances</a></li>
+              <li><a href="">Wellness</a></li>
+              <li><a href="">Fitness</a></li>
+              <li><a href="">Ayush</a></li>
+
+            </ul>
+          </div>
+        </li>
+        <li class="menu_text">
+          <a href="">Home Improvement <i class="fas fa-chevron-down"></i></a>
+          <div class="sub_menu_1">
+            <ul>
+              <li><a href="">Auto Care</a></li>
+              <li><a href="">Building Supplies & Measuring Tools</a></li>
+              <li><a href="">Carpentry</a></li>
+              <li><a href="">Electrical</a></li>
+              <li><a href="">Hardware & Plumbing</a></li>
+              <li><a href="">Home Cleaning & Organisation</a></li>
+              <li><a href="">Industrial & Scientific Supplies</a></li>
+              <li><a href="">Home Safety & Automation</a></li>
+              <li><a href="">Kitchen & Bath Fixtures</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+  <div id="mysidebar" class="sidenav">
+    <div id="myacc" class="myacc">
+      <a href="" class="closebtn" onclick="closenav()"
+        ><i class="fas fa-times"></i
+      ></a>
+      <button id="hello_button" onclick="signin()">
+        <span id="hello_icon" class="hello"
+          ><i class="fas fa-user-circle"></i>
+        </span>
+        <h3 id="hello_text" class="hello" onclick="signin()">Hello, Sign in</h3>
+      </button>
+
+      <div id="account">
+        <div id="account_box" class="accdiv" onclick="account()">Account</div>
+        <div id="order_box" class="accdiv">Orders</div>
+      </div>
+    </div>
+
+    <div id="sidenav_home">
+      <a href="home.html">Home</a>
+      <a href="#">Shop By Category</a>
+      <a href="#">My list</a>
+      <a href="wallet.html">JioMart wallet</a>
+      <a href="#">Jiomart cashback</a>
+      <a href="GiftStore.html">Jiomart Gift Store</a>
+      <a href="#">Jiomart Gift Card</a>
+      <a href="#">My Orders</a>
+      <a href="#">Wishlist</a>
+      <a href="#">All offers</a>
+      <div class="line"></div>
+      <a href="account.html">My Account</a>
+      <a href="">Need Help</a>
+      <a href="">About us</a>
+      <a href="">Guide</a>
+      <div class="line"></div>
+      <h4>CONTACT US</h4>
+      <p>
+        WhatsApp us :
+        <a
+          href="https://api.whatsapp.com/send/?phone=917000370003&text=Hi&app_absent=0"
+          target="_blank"
+          >70003 70003</a>
+          <br>
+        Email At:
+        <a href="">cs@jiomart.com</a>
+      </p>
+      <span id="footerspan">
+        <p>Call Us : <a href="">1800 890 1222</a></p>
+        <p>8:00 AM to 8:00 PM,365 days</p>
+      </span>
+      <p>
+        Please note that you are accessing the BETA Version of
+        <a href="">www.jiomart.com</a>
+      </p>
+      <p>
+        Email to CS Head at: cshead@jiomart.com
+
+This being the final level redress for your grievances, please provide us the previous communication and related resolution offered in earlier stages, so that we may have a comprehensive understanding of the matter.
+
+We value your time and we are committed to ensure satisfaction in all your interactions with us. <a href="">cshead@jiomart.com</a>
+      </p>
+      <h4>DOWNLOAD APP</h4>
+      <div id="playstore">
+        <a
+          href="https://play.google.com/store/apps/details?id=com.jpl.jiomart"
+          target="_blank"
+          style="margin-right: 16px"
+        >
+          <img
+            src="https://www.jiomart.com/images/cms/wysiwyg/app-icons/play_store.png"
+            alt="Donwload Jio mart app from Play store"
+          />
+        </a>
+        <a
+          href="https://apps.apple.com/in/app/jiomart/id1522085683"
+          target="_blank"
+        >
+          <img
+            src="https://www.jiomart.com/images/cms/wysiwyg/app-icons/ios_store.png"
+            alt="Donwload Jio mart for IOS app from App store"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="slider">
+    <figure class="slider">
+      <img
+        src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1691612739_Aaj_Ki_Deals_Desktop.jpg?im=Resize=(1680,320)"
+      />
+    </figure>
+  </div>
+  <img
+    id="homeDelivery"
+    src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1693374058_Try_Handmade_Gifts_Desktop.jpg?im=Resize=(1680,320)"
+  />
+  <img
+    id="winterFashion"
+    src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1636653724_web.jpg"
+  />
+  <img
+    id="afterWinter"
+    src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1692866183_Web_Mumbai_JioMartHome_01.jpg?im=Resize=(1680,320)"
+  />
+  <h2 class="topCat">Shop from Top Categories</h2>
+  <div class="sllide">
+
+    <div class="i1">
+      <img
+        src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1693382305_1692812532_Oils_and_Masala.jpg?im=Resize=(223,280)"
+      />
+
+    </div>
+    <div class="i1">
+      <img
+        src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1693382335_1692812581_Dry_fruits_and_nuts.jpg?im=Resize=(223,280)"
+      />
+
+    </div>
+    <div class="i1">
+      <img
+        src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1693389419_men_fashion.jpg?im=Resize=(223,280)"
+      />
+    </div>
+    <div class="i1">
+      <img
+        src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1693464920_Women_fashion.jpg?im=Resize=(223,280)"
+      />
+    </div>
+    <div class="i1">
+      <img
+        src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1693464948_kids_fashion.jpg?im=Resize=(223,280)"
+      />
+
+    </div>
+    <div class="i1">
+      <img
+        src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1693385796_1690872701_Smartphones.jpg?im=Resize=(223,280)"
+      />
+    </div>
+    <div class="i1">
+      <img
+        src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1693385876_1690872761_Washing_machines.jpg?im=Resize=(223,280)"
+      />
+    </div>
+    <div class="i1">
+      <img
+        src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1693386506_1690872942_Smart_Televisions.jpg?im=Resize=(223,280)"
+      />
+    </div>
+    <div class="i1">
+      <img
+        src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1693465576_Luggage.jpg?im=Resize=(223,280)"
+      />
+    </div>
+    <div class="i1">
+      <img
+        src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1693465804_Food_and_beverage.jpg?im=Resize=(223,280)"
+      />
+    </div>
+    <div class="i1">
+      <img
+        src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1688141206_5.jpg?im=Resize=(223,280)"
+      />
+    </div>
+  </div>
+  </div>
+  <img
+    id="handWash"
+    src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1693482402_Siyahi_Desktop.jpg?im=Resize=(1680,320)"
+  />
+  <h2 class="topCat" style="font-size: 25px; padding-bottom: 20px;" >TOP DEALS</h2>
+  <div class="classic">
+    <div class="container">
+        <div class="one">
+            <div class="all">
+                <div class="indiv">
+                    <div class="imgdiv">
+                        <div class="ic1"><img src="https://www.freeiconspng.com/uploads/sale-promo-percent-20-off-png-6.png" height="45px" alt=""></div>
+                        <div class="mimg"><img class="hov" src="https://www.jiomart.com//images/product/original/490003834/maggi-2-minute-masala-instant-noodles-560-g-product-images-o490003834-p490003834-0-202203150702.jpg?im=Resize=(150,150)" width="120px" alt=""></div>
+                    </div>
+                   <div class="name">Maggi 2-Minute Masala Instant Noodles 560 g</div>
+                    <div class="price">
+                        <div><b><span class="inr-sign"> 87.00</b></div>
+                        <div class="p1">M.R.P:<div class="p2"><span class="inr-sign"> 112.00</span>
+                        </div></div>
+                        <p class="save">Save <span class="inr-sign">25.00</span></p>
+                        <div class="btn">
+                            <div><button class="pluss">+</button></div>
+                            <div><button class="plus">Add To Cart
+                            </button></div>
+                            <div><button class="minus">-</button></div>
+                        </div>
+                    </div>
+             </div>
+         </div>
+     </div>
+ <div class="one">
+    <div class="all">
+        <div class="indiv">
+            <div class="imgdiv">
+              <div class="ic1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWiR5VgAm2UWgD5In6AlQaaaBnNoC44pCYuYK45cw7oxUpCFuccq26FEIkNCXCuFQH2o0&usqp=CAU" height="40px" alt=""></div>
+              <div class="mimg"><img class="hov" src="https://www.jiomart.com/images/product/original/490008739/parle-g-original-glucose-biscuits-800-g-product-images-o490008739-p490008739-0-202203170454.jpg?im=Resize=(420,420)" width="120px" alt=""></div>
+            </div>
+            <div class="name">Parle-G Original Glucose Biscuits 800 g</div>
+            <div class="price">
+                <div><b><span class="inr-sign">74.00</b></div>
+                <div class="p1">M.R.P:<div class="p2"><span class="inr-sign"> 90.00</span>
+                </div></div>
+                <p class="save">Save <span class="inr-sign">16.00</span></p>
+                <div class="btn2">
+                    <div><button class="pluss2">+</button></div>
+                    <div><button class="plus2">Add To Cart
+                    </button></div>
+                    <div><button class="minus2">-</button></div>
+                </div>
+            </div>
+     </div>
+ </div>
+ </div>
+ <div class="one">
+  <div class="all">
+    <div class="indiv">
+        <div class="imgdiv">
+          <div class="ic1"><img src="https://www.freeiconspng.com/uploads/sale-promo-percent-20-off-png-6.png" height="40px" alt=""></div>
+          <div class="mimg"><img class="hov" src="https://www.jiomart.com//images/product/original/rvbxryi4fc/yogabar-dark-chocolate-peanut-butter-creamy-chocolatey-1kg-product-images-orvbxryi4fc-p591880267-0-202206030755.jpg?im=Resize=(150,150)" width="120px" alt=""></div>
+        </div>
+        <div class="name">Yogabar DarkChocolate Peanut Butter 1 kg</div>
+        <div class="price">
+            <div><b><span class="inr-sign"> 349.00</b></div>
+            <div class="p1">M.R.P:<div class="p2"><span class="inr-sign"> 589.00</span>
+            </div></div>
+            <p class="save">Save <span class="inr-sign"> 240.00</span></p>
+            <div class="btn2">
+                <div><button class="pluss2">+</button></div>
+                <div><button class="plus2">Add To Cart
+                </button></div>
+                <div><button class="minus2">-</button></div>
+            </div>
+        </div>
+ </div>
+</div>
+ </div>
+ <div class="one">
+  <div class="all">
+    <div class="indiv">
+        <div class="imgdiv">
+          <div class="ic1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWiR5VgAm2UWgD5In6AlQaaaBnNoC44pCYuYK45cw7oxUpCFuccq26FEIkNCXCuFQH2o0&usqp=CAU" height="40px" alt=""></div>
+          <div class="mimg"><img class="hov" src="https://www.jiomart.com//images/product/original/491696497/del-monte-tomato-ketchup-1-1-kg-product-images-o491696497-p590126648-0-202304271751.jpg?im=Resize=(150,150)" width="120px" alt=""></div>
+          </div>
+     <div class="name">Del Monte Tomato Ketchup 1.1 kg</div>
+      <div class="price">
+          <div><b><span class="inr-sign"> 80.00</b></div>
+          <div class="p1">M.R.P:<div class="p2"><span class="inr-sign"> 160.00</span>
+          </div></div>
+          <p class="save">Save <span class="inr-sign"> 80.00</span></p>
+          <div class="btn2">
+              <div><button class="pluss2">+</button></div>
+              <div><button class="plus2">Add To Cart
+              </button></div>
+              <div><button class="minus2">-</button></div>
+            </div>
+        </div>
+ </div>
+</div>
+ </div>
+ <div class="one">
+  <div class="all">
+    <div class="indiv">
+        <div class="imgdiv">
+          <div class="ic1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWiR5VgAm2UWgD5In6AlQaaaBnNoC44pCYuYK45cw7oxUpCFuccq26FEIkNCXCuFQH2o0&usqp=CAU" height="40px" alt=""></div>
+          <div class="mimg"><img class="hov" src="https://www.jiomart.com/images/product/original/rve5xquzbe/primelife-kulfi-maker-mould-reusable-candy-maker-ice-candy-maker-plastic-frozen-ice-cream-mould-multicolor-candy-product-images-orve5xquzbe-p591522709-0-202205222050.jpg?im=Resize=(360,360)" width="120px" alt=""></div>
+          </div>
+     <div class="name">Primelife Kulfi Maker Mould(Candy)</div>
+      <div class="price">
+          <div><b><span class="inr-sign"> 199.00</b></div>
+          <div class="p1">M.R.P:<div class="p2"><span class="inr-sign"> 400.00</span>
+          </div></div>
+          <p class="save">Save <span class="inr-sign">201.00</span></p>
+          <div class="btn2">
+              <div><button class="pluss2">+</button></div>
+              <div><button class="plus2">Add To Cart
+              </button></div>
+              <div><button class="minus2">-</button></div>
+            </div>
+        </div>
+ </div>
+</div>
+ </div>
+ <div class="one">
+  <div class="all">
+    <div class="indiv">
+        <div class="imgdiv">
+          <div class="ic1"><img src="https://www.freeiconspng.com/uploads/sale-promo-percent-20-off-png-6.png" height="40px" alt=""></div>
+          <div class="mimg"><img class="hov" src="https://www.jiomart.com/images/product/150x150/491055460/colgate-strong-teeth-dental-cream-toothpaste-buy-2-200-g-get-100-g-free-0-20211011.jpg" width="120px" alt=""></div>
+      </div>
+     <div class="name">Colgate Strong Teeth Dental Cream T..</div>
+      <div class="price">
+          <div><b><span class="inr-sign"> 171.00</b></div>
+          <div class="p1">M.R.P:<div class="p2"><span class="inr-sign"> 231.00</span>
+          </div></div>
+          <p class="save">Save <span class="inr-sign"> 60.00</span></p>
+          <div class="btn">
+              <div><button class="pluss">+</button></div>
+              <div><button class="plus">Add To Cart
+              </button></div>
+              <div><button class="minus">-</button></div>
+            </div>
+        </div>
+ </div>
+</div>
+ </div>
+ <div class="one">
+  <div class="all">
+    <div class="indiv">
+        <div class="imgdiv">
+          <div class="ic1"><img src="https://www.freeiconspng.com/uploads/sale-promo-percent-20-off-png-6.png" height="40px" alt=""></div>
+          <div class="mimg"><img class="hov" src="https://www.jiomart.com//images/product/original/490009614/lotte-creamfilled-choco-pie-28-g-pack-of-12-product-images-o490009614-p490009614-0-202203170648.jpg?im=Resize=(150,150)" width="120px" alt=""></div>
+      </div>
+     <div class="name">Lotte Choco Pie 28 g (12 pcs)</div>
+      <div class="price">
+          <div><b><span class="inr-sign"> 109.00</b></div>
+          <div class="p1">M.R.P:<div class="p2"><span class="inr-sign"> 170.00</span>
+          </div></div>
+          <p class="save">Save <span class="inr-sign"> 61.00</span></p>
+          <div class="btn">
+              <div><button class="pluss">+</button></div>
+              <div><button class="plus">Add To Cart
+              </button></div>
+              <div><button class="minus">-</button></div>
+            </div>
+        </div>
+ </div>
+</div>
+ </div>
+ <div class="one">
+  <div class="all">
+    <div class="indiv">
+        <div class="imgdiv">
+          <div class="ic1"><img src="https://www.freeiconspng.com/uploads/sale-promo-percent-20-off-png-6.png" height="40px" alt=""></div>
+          <div class="mimg"><img class="hov" src="https://www.jiomart.com//images/product/original/491551829/bingo-achaari-masti-mad-angles-130-g-product-images-o491551829-p491551829-0-202308182201.jpg?im=Resize=(150,150)" width="120px" alt=""></div>
+      </div>
+     <div class="name">Bingo Achaari Masti Mad Angles 130 g</div>
+      <div class="price">
+          <div><b><span class="inr-sign"> 25.00</b></div>
+          <div class="p1">M.R.P:<div class="p2"><span class="inr-sign"> 50.00</span>
+          </div></div>
+          <p class="save">Save <span class="inr-sign"> 25.00</span></p>
+          <div class="btn">
+              <div><button class="pluss">+</button></div>
+              <div><button class="plus">Add To Cart
+              </button></div>
+              <div><button class="minus">-</button></div>
+            </div>
+        </div>
+ </div>
+</div>
+ </div>
+ <div class="one">
+  <div class="all">
+    <div class="indiv">
+        <div class="imgdiv">
+          <div class="ic1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWiR5VgAm2UWgD5In6AlQaaaBnNoC44pCYuYK45cw7oxUpCFuccq26FEIkNCXCuFQH2o0&usqp=CAU" height="40px" alt=""></div>
+          <div class="mimg"><img class="hov" src="https://www.jiomart.com/images/product/original/490876695/britannia-jimjam-sandwich-biscuits-138-g-product-images-o490876695-p490876695-0-202306121927.jpg?im=Resize=(360,360)" width="120px" alt=""></div>
+          </div>
+     <div class="name">Britannia Jimjam Biscuits 138 g</div>
+      <div class="price">
+          <div><b><span class="inr-sign"> 25.00</b></div>
+          <div class="p1">M.R.P:<div class="p2"><span class="inr-sign"> 35.00</span>
+          </div></div>
+          <p class="save">Save <span class="inr-sign"> 10.00</span></p>
+          <div class="btn2">
+              <div><button class="pluss2">+</button></div>
+              <div><button class="plus2">Add To Cart
+              </button></div>
+              <div><button class="minus2">-</button></div>
+            </div>
+        </div>
+ </div>
+</div>
+ </div>
+ <div class="one">
+  <div class="all">
+    <div class="indiv">
+        <div class="imgdiv">
+          <div class="ic1"><img src="https://www.freeiconspng.com/uploads/sale-promo-percent-20-off-png-6.png" height="40px" alt=""></div>
+          <div class="mimg"><img class="hov" src="https://www.jiomart.com/images/product/original/599991080/watermelon-kiran-large-premium-indian-1-pc-product-images-o599991080-p591226032-0-202304180904.jpg?im=Resize=(420,420)" width="120px" alt=""></div>
+      </div>
+     <div class="name">Watermelon Large 1 Pc(Approx 3.50kg)</div>
+      <div class="price">
+          <div><b><span class="inr-sign"> 139.00</b></div>
+          <div class="p1">M.R.P:<div class="p2"><span class="inr-sign">249.00</span>
+          </div></div>
+          <p class="save">Save <span class="inr-sign"> 110.00</span></p>
+          <div class="btn">
+              <div><button class="pluss">+</button></div>
+              <div><button class="plus">Add To Cart
+              </button></div>
+              <div><button class="minus">-</button></div>
+            </div>
+        </div>
+ </div>
+</div>
+ </div>
+ <div class="one">
+  <div class="all">
+    <div class="indiv">
+        <div class="imgdiv">
+          <div class="ic1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWiR5VgAm2UWgD5In6AlQaaaBnNoC44pCYuYK45cw7oxUpCFuccq26FEIkNCXCuFQH2o0&usqp=CAU" height="40px" alt=""></div>
+          <div class="mimg"><img class="hov" src="https://www.jiomart.com/images/product/original/rvkxguqvat/snickers-chocolate-bar-22-gm-pack-of-32-product-images-orvkxguqvat-p592240278-0-202212231507.png?im=Resize=(360,360)" width="120px" alt=""></div>
+          </div>
+     <div class="name">Snickers Nutritious Peanuts(Pack of 32)</div>
+      <div class="price">
+          <div><b><span class="inr-sign"> 455.00</b></div>
+          <div class="p1">M.R.P:<div class="p2"><span class="inr-sign"> 640.00</span>
+          </div></div>
+          <p class="save">Save <span class="inr-sign"> 185.00</span></p>
+          <div class="btn2">
+              <div><button class="pluss2">+</button></div>
+              <div><button class="plus2">Add To Cart
+              </button></div>
+              <div><button class="minus2">-</button></div>
+            </div>
+        </div>
+ </div>
+</div>
+ </div>
+</div>
+</div>
+ 
+
+  <div class="paytmOfr">
+   <div>
+     <img src="https://www.jiomart.com/images/cms/offers/1693476886_Yes_Bank_910x380.jpg">
+   </div>
+   <div><img src="https://www.jiomart.com/images/cms/offers/1693480278_Paytm_Postpaid_1000x467.jpg"></div>
+  </div>
+
+  <div class="essential_main_box">
+    <div class="tital_box">
+      <h2>Offers on daily essentials</h2>
+    </div>
+    <div class="essentials">
+      <div class="essential_small_box">
+        <div class="offer_tags">
+          <span class="offers">
+            Up To
+            <b>20%</b>
+            OFF
+          </span>
+        </div>
+        <a
+          href="https://www.jiomart.com/c/groceries/home-care/all-purpose-cleaners/152"
+          title="dals & pulses"
+          class="home_essential"
+        >
+          <div class="essential_img">
+            <span class="imgspan">
+              <img
+                img="hov"
+                src="https://www.jiomart.com/images/category/17/thumb/dals-pulses-20200714.png"
+                width="150px"
+                height="150px"
+              /> </span
+            ><br />
+            <span class="essential_name">Dals & Pulses</span>
+          </div>
+        </a>
+      </div>
+      <div class="essential_small_box">
+        <div class="offer_tags">
+          <span class="offers">
+            Up To
+            <b>50%</b>
+            OFF
+          </span>
+        </div>
+        <a
+          href="https://www.jiomart.com/c/groceries/home-care/all-purpose-cleaners/152"
+          title="Atta"
+          class="home_essential"
+        >
+          <div class="essential_img">
+            <span class="imgspan">
+              <img
+                src="https://www.jiomart.com/images/category/14/thumb/0-14.png"
+                width="150px"
+                height="150px"
+              /> </span
+            ><br />
+            <span class="essential_name">Atta, Flours & Sooji</span>
+          </div>
+        </a>
+      </div>
+      <div class="essential_small_box">
+        <div class="offer_tags">
+          <span class="offers">
+            Up To
+            <b>20%</b>
+            OFF
+          </span>
+        </div>
+        <a
+          href="https://www.jiomart.com/c/groceries/home-care/all-purpose-cleaners/152"
+          title="Edible Oil"
+          class="home_essential"
+        >
+          <div class="essential_img">
+            <span class="imgspan">
+              <img
+                src="https://www.jiomart.com/images/category/18/thumb/0-18.png"
+                width="150px"
+                height="150px"
+              /> </span
+            ><br />
+            <span class="essential_name">Edible Oils</span>
+          </div>
+        </a>
+      </div>
+      <div class="essential_small_box">
+        <div class="offer_tags">
+          <span class="offers">
+            Up To
+            <b>10%</b>
+            OFF
+          </span>
+        </div>
+        <a
+          href="https://www.jiomart.com/c/groceries/home-care/all-purpose-cleaners/152"
+          title="Salt"
+          class="home_essential"
+        >
+          <div class="essential_img">
+            <span class="imgspan">
+              <img
+                src="https://www.jiomart.com/images/category/20/thumb/0-20.png"
+                width="150px"
+                height="150px"
+              /> </span
+            ><br />
+            <span class="essential_name">Salt, Sugar & Jaggery</span>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="essentials">
+      <div class="essential_small_box">
+        <div class="offer_tags">
+          <span class="offers">
+            Up To
+            <b>15%</b>
+            OFF
+          </span>
+        </div>
+        <a
+          href="https://www.jiomart.com/c/groceries/home-care/all-purpose-cleaners/152"
+          title="Bath"
+          class="home_essential"
+        >
+          <div class="essential_img">
+            <span class="imgspan">
+              <img
+                src="https://www.jiomart.com/images/category/119/thumb/bath-hand-wash-20200714.png"
+                width="150px"
+                height="150px"
+              /> </span
+            ><br />
+            <span class="essential_name">Bath & Hand Wash</span>
+          </div>
+        </a>
+      </div>
+      <div class="essential_small_box">
+        <div class="offer_tags">
+          <span class="offers">
+            Up To
+            <b>33%</b>
+            OFF
+          </span>
+        </div>
+        <a
+          href="https://www.jiomart.com/c/groceries/home-care/all-purpose-cleaners/152"
+          title="Toothpaste"
+          class="home_essential"
+        >
+          <div class="essential_img">
+            <span class="imgspan">
+              <img
+                src="https://www.jiomart.com/images/category/7/thumb/toothpaste-20200520.png"
+                width="150px"
+                height="150px"
+              /> </span
+            ><br />
+            <span class="essential_name">Toothpaste</span>
+          </div>
+        </a>
+      </div>
+      <div class="essential_small_box">
+        <div class="offer_tags">
+          <span class="offers">
+            Up To
+            <b>50%</b>
+            OFF
+          </span>
+        </div>
+        <a
+          href="https://www.jiomart.com/c/groceries/home-care/all-purpose-cleaners/152"
+          title="Noodle"
+          class="home_essential"
+        >
+          <div class="essential_img">
+            <span class="imgspan">
+              <img
+                src="https://www.jiomart.com/images/category/191/thumb/noodle-pasta-vermicelli-20200603.png"
+                width="150px"
+                height="150px"
+              /> </span
+            ><br />
+            <span class="essential_name">Noodle, Pasta, Vermicell</span>
+          </div>
+        </a>
+      </div>
+      <div class="essential_small_box">
+        <div class="offer_tags">
+          <span class="offers">
+            Up To
+            <b>30%</b>
+            OFF
+          </span>
+        </div>
+        <a
+          href="https://www.jiomart.com/c/groceries/home-care/all-purpose-cleaners/152"
+          title="biscuits"
+          class="home_essential"
+        >
+          <div class="essential_img">
+            <span class="imgspan">
+              <img
+                src="https://www.jiomart.com/images/category/44/thumb/0-44.png"
+                width="150px"
+                height="150px"
+              /> </span
+            ><br />
+            <span class="essential_name">Biscuits & Cookies</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <h2 class="topCat">Top Picks</h2>
+  <div class="sllide2">
+    <div class="d1">
+      <img class="i2"
+        src="https://www.jiomart.com/images/category/141/thumb/fruits-vegetables-20200520.png?v=1607022291"
+      />
+      <p>Fruits & Vegetables</p>
+    </div>
+    <div class="d1">
+      <img class="i2"
+        src="https://www.jiomart.com/images/product/original/rvptr7gd3y/freshtige-100-natural-and-premium-healthy-mix-dry-fruits-1kg-nuts-fresh-and-healthy-dry-fruits-product-images-orvptr7gd3y-p597572140-0-202301141500.jpg?im=Resize=(360,360)"
+      />
+      <p>Dry Fruits</p>
+    </div>
+    <div class="d1">
+      <img class="i2"
+        src="https://www.jiomart.com/images/product/original/493656219/surf-excel-matic-front-load-liquid-detergent-3-2-l-product-images-o493656219-p596375005-0-202306260410.jpg?im=Resize=(360,360)"
+      />
+      <p>Home Care</p>
+    </div>
+    <div class="d1">
+      <img class="i2"
+        src="https://www.jiomart.com/images/product/original/491433436/faber-super-3d-plus-t2s2-60-cms-3-way-silent-suction-chimney-touch-control-black-digital-o491433436-p590442601-0-202108130203.jpeg?im=Resize=(360,360)"
+      />
+      <p>Kitchen Care</p>
+    </div>
+    <div class="d1">
+      <img class="i2"
+        src="https://www.jiomart.com/images/product/original/rvefq1c21c/panzora-women-blue-and-gold-woven-cotton-silk-jamdani-saree-with-unstitched-blouse-product-images-rvefq1c21c-0-202306110755.jpg?im=Resize=(330,410)"
+      />
+      <p>Fashion</p>
+    </div>
+    <div class="d1">
+      <img class="i2"
+        src="https://www.jiomart.com/images/product/original/493838169/lg-139-cm-55-inch-4k-oled-smart-tv-oled55g3-digital-o493838169-p603416248-0-202307311911.jpeg?im=Resize=(360,360)"
+      />
+      <p>Electronics</p>
+    </div>
+    <div class="d1">
+      <img class="i2"
+        src="https://www.jiomart.com/images/product/original/rv5to0sa2q/buytya-makeup-kit-combo-7-brushes-set-1-kajal-1-eyeliner-1puff-1-eyeliner-1-mascara-1-eye-liner-1-fixer-1-primer-1-foundation-1-contour-stick-product-images-orv5to0sa2q-p596073418-0-202212051544.jpg?im=Resize=(360,360)"
+      />
+      <p>Beauty Care</p>
+    </div>
+    <div class="d1">
+      <img class="i2"
+        src="https://www.jiomart.com/images/product/original/rvehpenrn1/pvc-flooring-planks-tiles-self-adhesive-peel-stick-wooden-design-18-planks-27-square-feet-product-images-orvehpenrn1-p602310553-0-202306101656.jpg?im=Resize=(360,360)"
+      />
+      <p>Building Supplies</p>
+    </div>
+  </div>
+  <h2 class="topWomen">Kids Fashion
+  </h2>
+  <div class="womenFashion">
+    <div>
+      <img
+        src="https://assets.ajio.com/cms/AJIO/WEB/18082023-D-KHP-accessory.gif"
+      />
+    </div>
+    <div>
+      <img
+        src="https://assets.ajio.com/cms/AJIO/WEB/18082023-D-KHP-character.gif"
+      />
+    </div>
+  </div>
+  <div class="AfterWomenFashion">
+    <div>
+      <img
+        src="https://assets.ajio.com/cms/AJIO/WEB/18082023-D-KHP-bestdeals-p9-tops.jpg"
+      />
+    </div>
+    <div>
+      <img
+        src="https://assets.ajio.com/cms/AJIO/WEB/18082023-D-KHP-bestdeals-p3-leggings.jpg"
+      />
+    </div>
+    <div>
+      <img
+        src="https://assets.ajio.com/cms/AJIO/WEB/18082023-D-KHP-bestdeals-p15-ethnicwear.jpg"
+      />
+    </div>
+    <div>
+      <img
+        src="https://assets.ajio.com/cms/AJIO/WEB/18082023-D-KHP-bestdeals-p7-westernwearsets.jpg"
+      />
+    </div>
+    <div>
+      <img
+        src="https://assets.ajio.com/cms/AJIO/WEB/18082023-D-KHP-bestdeals-p4-flipflops.jpg"
+      />
+    </div>
+  </div>
+  <div class="largeImageStart">
+    <div>
+      <img
+        src="https://myjiomart.in/wp-content/uploads/2022/05/Jiomart-summer-ready-sale.jpg"
+      />
+    </div>
+    <div>
+      <img
+        src="https://cdn0.desidime.com/cdn-cgi/image/fit=contain,f=auto,onerror=redirect,w=1200,h=675,q=90/attachments/photos/874574/original/JioMart-Big-Summer-Sale-2023-JioMart-Upcoming-Sale-Offers-Discounts.jpg"
+      />
+    </div>
+    <div>
+      <img
+        src="https://cdn.grabon.in/gograbon/images/web-images/uploads/1618551213743/jiomart-offers.jpg"
+      />
+    </div>
+    <div>
+      <img
+        src="https://cdn.flipshope.com/blog/wp-content/uploads/2023/04/JioMart-upcoming-sale.jpg"
+      />
+    </div>
+  </div>
+  <div class="essential_main_box">
+    <div class="tital_box">
+      <h2>Offers on Household & Personal care</h2>
+    </div>
+    <div class="essentials">
+      <div class="houshold_small_box">
+        <div class="offer_tags">
+          <span class="offers">
+            Up To
+            <b>20%</b>
+            OFF
+          </span>
+        </div>
+        <a
+          href=""
+          title="dals & pulses"
+          class="home_essential"
+        >
+          <div class="essential_img">
+            <span class="imgspan">
+              <img
+                img="hov"
+                src="https://www.jiomart.com/images/product/original/rvu7n0mfxn/klinzer-complete-home-care-products-pack-of-7-non-toxic-eco-friendly-contains-liquids-for-floors-glass-toilet-bathroom-fabrics-and-dishes-product-images-orvu7n0mfxn-p601114880-0-202305161528.png?im=Resize=(360,360)"
+                width="150px"
+                height="150px"
+              /> </span
+            ><br />
+            <span class="essential_name">Cleaning Products</span>
+          </div>
+        </a>
+      </div>
+      <div class="houshold_small_box">
+        <div class="offer_tags">
+          <span class="offers">
+            Up To
+            <b>50%</b>
+            OFF
+          </span>
+        </div>
+        <a
+          href="https://www.jiomart.com/c/groceries/home-care/all-purpose-cleaners/152"
+          title="Atta"
+          class="home_essential"
+        >
+          <div class="essential_img">
+            <span class="imgspan">
+              <img
+                src="https://www.jiomart.com/images/product/original/rvjm1jq65z/platone-ficus-bonsai_bonsai-plant-jnijf-x54-product-images-orvjm1jq65z-p597895591-0-202301261514.jpg?im=Resize=(360,360)"
+                width="150px"
+                height="150px"
+              /> </span
+            ><br />
+            <span class="essential_name">Plants</span>
+          </div>
+        </a>
+      </div>
+      <div class="houshold_small_box">
+        <div class="offer_tags">
+          <span class="offers">
+            Up To
+            <b>20%</b>
+            OFF
+          </span>
+        </div>
+        <a
+          href="https://www.jiomart.com/c/groceries/home-care/all-purpose-cleaners/152"
+          title="Edible Oil"
+          class="home_essential"
+        >
+          <div class="essential_img">
+            <span class="imgspan">
+              <img
+                src="https://www.jiomart.com/images/product/original/rv4trtl9tm/frills-sanitary-pads-free-to-dream-l-combo-pack-of-4-with-28-pieces-sanitary-pad-pack-of-4-product-images-orv4trtl9tm-p602841188-0-202306300216.jpg?im=Resize=(360,360)"
+                width="150px"
+                height="150px"
+              /> </span
+            ><br />
+            <span class="essential_name">Feminine Hygiene</span>
+          </div>
+        </a>
+      </div>
+      <div class="houshold_small_box">
+        <div class="offer_tags">
+          <span class="offers">
+            Up To
+            <b>10%</b>
+            OFF
+          </span>
+        </div>
+        <a
+          href="https://www.jiomart.com/c/groceries/home-care/all-purpose-cleaners/152"
+          title="Salt"
+          class="home_essential"
+        >
+          <div class="essential_img">
+            <span class="imgspan">
+              <img
+                src="https://www.jiomart.com/images/product/original/rvdmy6tjjj/beauzy-beauty-secret-all-in-one-makup-combo-10-with-best-possible-compact-heavy-product-images-orvdmy6tjjj-p601101353-0-202305021148.jpg?im=Resize=(360,360)"
+                width="150px"
+                height="150px"
+              /> </span
+            ><br />
+            <span class="essential_name">Beauty</span>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="essentials">
+      <div class="houshold_small_box">
+        <div class="offer_tags">
+          <span class="offers">
+            Up To
+            <b>15%</b>
+            OFF
+          </span>
+        </div>
+        <a
+          href="https://www.jiomart.com/c/groceries/home-care/all-purpose-cleaners/152"
+          title="Bath"
+          class="home_essential"
+        >
+          <div class="essential_img">
+            <span class="imgspan">
+              <img
+                src="https://www.jiomart.com/images/product/original/rvuxagrjsv/agaro-cosmic-lite-sonic-electric-toothbrush-white-pack-of-2-product-images-orvuxagrjsv-p595576037-0-202211251955.jpg?im=Resize=(360,360)"
+                width="150px"
+                height="150px"
+              /> </span
+            ><br />
+            <span class="essential_name">Tooth Care Accessories</span>
+          </div>
+        </a>
+      </div>
+      <div class="houshold_small_box">
+        <div class="offer_tags">
+          <span class="offers">
+            Up To
+            <b>33%</b>
+            OFF
+          </span>
+        </div>
+        <a
+          href="https://www.jiomart.com/c/groceries/home-care/all-purpose-cleaners/152"
+          title="Toothpaste"
+          class="home_essential"
+        >
+          <div class="essential_img">
+            <span class="imgspan">
+              <img
+                src="https://www.jiomart.com/images/product/original/rvhuujmmfa/vcare-super-eazzy-shampoo-hair-color-natural-black-hair-color-shampoo-for-men-and-women-hair-care-products-no-ammonia-no-paraben-180-ml-product-images-orvhuujmmfa-p594796498-0-202210251707.jpg?im=Resize=(360,360)"
+                width="150px"
+                height="150px"
+              /> </span
+            ><br />
+            <span class="essential_name">Hair Care</span>
+          </div>
+        </a>
+      </div>
+      <div class="houshold_small_box">
+        <div class="offer_tags">
+          <span class="offers">
+            Up To
+            <b>50%</b>
+            OFF
+          </span>
+        </div>
+        <a
+          href="https://www.jiomart.com/c/groceries/home-care/all-purpose-cleaners/152"
+          title="Noodle"
+          class="home_essential"
+        >
+          <div class="essential_img">
+            <span class="imgspan">
+              <img
+                src="https://www.jiomart.com/images/product/original/932382/bodyguard-baby-diaper-disposal-bags-45-s-prod-932382-0-202304120940.jpg?im=Resize=(360,360)"
+                width="150px"
+                height="150px"
+              /> </span
+            ><br />
+            <span class="essential_name">Baby Care</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="houshold_small_box">
+        <div class="offer_tags">
+          <span class="offers">
+            Up To
+            <b>30%</b>
+            OFF
+          </span>
+        </div>
+        <a
+          href="https://www.jiomart.com/c/groceries/home-care/all-purpose-cleaners/152"
+          title="biscuits"
+          class="home_essential"
+        >
+          <div class="essential_img">
+            <span class="imgspan">
+              <img
+                src="https://www.jiomart.com/images/product/original/rvkg0utzc0/coo-coo-small-size-diaper-pants-56-count-baby-wipes-80-count-combo-pack-product-images-orvkg0utzc0-p596265946-0-202212101403.jpg?im=Resize=(360,360)"
+                width="150px"
+                height="150px"
+              /> </span
+            ><br />
+            <span class="essential_name">Diaper & Wipes</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="largeImageStart">
+    <div>
+      <img
+        src="https://pbs.twimg.com/media/FRbnUPTaUAIunnP.jpg"
+      />
+    </div>
+    <div>
+      <img
+        src="https://s3b.cashify.in/gpro/uploads/2022/09/08221256/JioMart-Offers-Today_-Grab-It-To-Shop-From-The-Comfort-Of-Your-Home.jpg"
+      />
+    </div>
+    <div>
+      <img
+        src="https://assets.indiadesire.com/images/Jio%20Winter%20Ready%20Sale.jpg"
+      />
+    </div>
+    <div>
+      <img
+        src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1648203937_Sports_Nutrition_1.jpg?im=Resize=(756,325)"
+      />
+    </div>
+  </div>
+  <div class="largeImageStart">
+    <div>
+      <img
+        src="https://jioguide.com/wp-content/uploads/2020/06/JioMart-Offers-Coupons-Promo-Codes-and-cashback-in-june-20289-600x358.jpg"
+      />
+    </div>
+    <div>
+      <img
+        src="https://cdn.zoutons.com/images/originals/blog/4_24_1643376121.png"
+      />
+    </div>
+    <div>
+      <img
+        src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1692267850_aaaab.jpg?im=Resize=(756,376)"
+      />
+    </div>
+    <div>
+      <img
+        src="https://jioguide.com/wp-content/uploads/2020/06/JioMart-Offers-Coupons-Promo-Codes-and-cashback-in-june-20225-600x364.jpg"
+      />
+    </div>
+  </div>
+  <!---------------------------------------------- largeImageStart end here ------------------------------------>
+  <div class="essential_main_box">
+    <div class="tital_box">
+      <h2>Offer on Groceries</h2>
+    </div>
+    <div class="essentials">
+      <div class="grocery_small_box">
+        <div class="offer_tags">
+          <span class="offers">
+            Up To
+            <b>20%</b>
+            OFF
+          </span>
+        </div>
+        <a
+          href="https://www.jiomart.com/c/groceries/home-care/all-purpose-cleaners/152"
+          title="dals & pulses"
+          class="home_essential"
+        >
+          <div class="essential_img">
+            <span class="imgspan">
+              <img
+                img="hov"
+                src="https://www.jiomart.com/images/product/original/rvyuz9y3mp/breakfast-combo-idli-dosa-sambar-coconut-chutney-gun-powder-upma-product-images-orvyuz9y3mp-p593499204-0-202208272109.jpg?im=Resize=(360,360)"
+                width="150px"
+                height="150px"
+              /> </span
+            ><br />
+            <span class="essential_name">Breakfast Cereals</span>
+          </div>
+        </a>
+      </div>
+      <div class="grocery_small_box">
+        <div class="offer_tags">
+          <span class="offers">
+            Up To
+            <b>15%</b>
+            OFF
+          </span>
+        </div>
+        <a
+          href="https://www.jiomart.com/c/groceries/home-care/all-purpose-cleaners/152"
+          title="Atta"
+          class="home_essential"
+        >
+          <div class="essential_img">
+            <span class="imgspan">
+              <img
+                src="https://epigamiastore.com/cdn/shop/articles/540x540px_1x1_ratio_Recipe_image_07_1100x.jpg?v=1678340510"
+                width="150px"
+                height="150px"
+              /> </span
+            ><br />
+            <span class="essential_name">Dairy Products</span>
+          </div>
+        </a>
+      </div>
+      <div class="grocery_small_box">
+        <div class="offer_tags">
+          <span class="offers">
+            Up To
+            <b>30%</b>
+            OFF
+          </span>
+        </div>
+        <a
+          href="https://www.jiomart.com/c/groceries/home-care/all-purpose-cleaners/152"
+          title="Edible Oil"
+          class="home_essential"
+        >
+          <div class="essential_img">
+            <span class="imgspan">
+              <img
+                src="https://www.jiomart.com/images/product/original/rvy8uxuhuw/voc-mart-premium-mixed-dry-fruits-1-kg-figs-almonds-cashew-raisins-pista-walnut-low-price-best-product-images-orvy8uxuhuw-p601328360-0-202305101216.png?im=Resize=(420,420)"
+                width="150px"
+                height="150px"
+              /> </span
+            ><br />
+            <span class="essential_name">Dry Fruits</span>
+          </div>
+        </a>
+      </div>
+      <div class="grocery_small_box">
+        <div class="offer_tags">
+          <span class="offers">
+            Up To
+            <b>50%</b>
+            OFF
+          </span>
+        </div>
+        <a
+          href="https://www.jiomart.com/c/groceries/home-care/all-purpose-cleaners/152"
+          title="Salt"
+          class="home_essential"
+        >
+          <div class="essential_img">
+            <span class="imgspan">
+              <img
+                src="https://www.jiomart.com/images/product/original/rv5bhpmylx/neelam-foodland-extra-thin-ripe-banana-chips-200g-product-images-orv5bhpmylx-p591416963-0-202205180440.jpg?im=Resize=(420,420)"
+                width="150px"
+                height="150px"
+              /> </span
+            ><br />
+            <span class="essential_name">Chips</span>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="essentials">
+      <div class="grocery_small_box">
+        <div class="offer_tags">
+          <span class="offers">
+            Up To
+            <b>40%</b>
+            OFF
+          </span>
+        </div>
+        <a
+          href="https://www.jiomart.com/c/groceries/home-care/all-purpose-cleaners/152"
+          title="Bath"
+          class="home_essential"
+        >
+          <div class="essential_img">
+            <span class="imgspan">
+              <img
+                src="https://scontent.fvga2-1.fna.fbcdn.net/v/t1.6435-9/132650513_3601505973273126_4607744725561879337_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=KSGAMWEMorIAX8npViB&_nc_ht=scontent.fvga2-1.fna&oh=00_AfCNZydLpAVQAjjnOo8InQH4d4OzrrKRZ03so2noYORKDg&oe=651930D2"
+                width="150px"
+                height="150px"
+              /> </span
+            ><br />
+            <span class="essential_name">Snacks & Namkeen</span>
+          </div>
+        </a>
+      </div>
+      <div class="grocery_small_box">
+        <div class="offer_tags">
+          <span class="offers">
+            Up To
+            <b>50%</b>
+            OFF
+          </span>
+        </div>
+        <a
+          href="https://www.jiomart.com/c/groceries/home-care/all-purpose-cleaners/152"
+          title="Toothpaste"
+          class="home_essential"
+        >
+          <div class="essential_img">
+            <span class="imgspan">
+              <img
+                src="https://www.jiomart.com/images/product/original/rv3hrtqtjx/newtreo-juice-with-pulp-12-x-berries-12-x-mixed-fruit-juices-imported-from-vietnam-fresh-squeezed-juice-24-x-250ml-cans-product-images-orv3hrtqtjx-p601811466-0-202305260804.jpg?im=Resize=(1000,1000)"
+                width="150px"
+                height="150px"
+              /> </span
+            ><br />
+            <span class="essential_name">Fruit juices</span>
+          </div>
+        </a>
+      </div>
+      <div class="grocery_small_box">
+        <div class="offer_tags">
+          <span class="offers">
+            Up To
+            <b>50%</b>
+            OFF
+          </span>
+        </div>
+        <a
+          href="https://www.jiomart.com/c/groceries/home-care/all-purpose-cleaners/152"
+          title="Noodle"
+          class="home_essential"
+        >
+          <div class="essential_img">
+            <span class="imgspan">
+              <img
+                src="https://www.jiomart.com/images/category/26/thumb/0-26.png"
+                width="150px"
+                height="150px"
+              /> </span
+            ><br />
+            <span class="essential_name">Soft Drinks</span>
+          </div>
+        </a>
+      </div>
+      <div class="grocery_small_box">
+        <div class="offer_tags">
+          <span class="offers">
+            Up To
+            <b>25%</b>
+            OFF
+          </span>
+        </div>
+        <a
+          href="https://www.jiomart.com/c/groceries/home-care/all-purpose-cleaners/152"
+          title="biscuits"
+          class="home_essential"
+        >
+          <div class="essential_img">
+            <span class="imgspan">
+              <img
+                src="https://www.jiomart.com/images/product/original/rve9vafcja/hit-bite-ready-to-fry-3d-flower-fryums-mix-crunchy-pipe-tasty-homemade-papad-food-colorful-finger-chips-tea-time-snacks-250-gms-product-images-orve9vafcja-p603340278-3-202307280748.jpg?im=Resize=(420,420)"
+                width="150px"
+                height="150px"
+              /> </span
+            ><br />
+            <span class="essential_name">Papads</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <h2 class="topWomen">Hottest Deals</h2>
+  <div class="hotDeals">
+    <div>
+      <img
+        src="https://www.jiomart.com/images/product/original/rvrfqw22r0/rigo-men-maroon-never-give-up-print-round-neck-half-sleeve-t-shirt-product-images-rvrfqw22r0-0-202207151613.jpg?im=Resize=(500,630)"
+      />
+    </div>
+    <div>
+      <img
+        src="data:image/jpeg;base64,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"
+      />
+    </div>
+    <div>
+      <img
+        src="https://www.jiomart.com/images/product/original/rvwceypcic/nusyl-boys-solid-white-red-t-shirt-combo-pack-of-2-product-images-rvwceypcic-0-202212171857.jpg?im=Resize=(500,630)"
+      />
+    </div>
+    <div>
+      <img
+        src="https://www.jiomart.com/images/product/original/rva2yasz2m/mildtouch-men-black-dark-blue-printed-lycra-blend-polyester-pack-of-2-track-pant-product-images-rva2yasz2m-0-202209211847.jpg?im=Resize=(600,750)"
+      />
+    </div>
+    <div>
+      <img
+        src="https://www.jiomart.com/images/product/original/rvlrtyjkvn/stylestone-women-blue-tie-dye-jumpsuit-product-images-rvlrtyjkvn-0-202207201956.jpg?im=Resize=(500,630)"
+      />
+    </div>
+  </div>
+  <div class="hotDeals">
+    <div>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4T2EvOv3Hr_mQGKjAyxBH6_fLoLaf0SNw_Q&usqp=CAU"
+      />
+    </div>
+    <div>
+      <img
+        src="https://www.jiomart.com/images/product/original/rvnzoyw3fu/ramraj-mens-royalcotton-white-full-sleeve-shirt-with-gold-jari-1-inch-double-layer-dhoti-40-product-images-rvnzoyw3fu-0-202304241241.jpg?im=Resize=(500,630)"
+      />
+    </div>
+    <div>
+      <img
+        src="data:image/jpeg;base64,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"
+      />
+    </div>
+    <div>
+      <img
+        src="https://www.jiomart.com/images/product/original/rvgujtdygy/forgive-women-s-girls-burnt-umber-straight-jeans-wide-leg-fit-cotton-blend-fabric-perfect-for-casual-wear-product-images-rvgujtdygy-0-202212300203.jpg?im=Resize=(500,630)"
+      />
+    </div>
+    <div>
+      <img
+        src="https://www.jiomart.com/images/product/original/441134391_olive/typographic-print-sports-leggings-model-441134391_olive-0-202203221253.jpg?im=Resize=(500,630)"
+      />
+    </div>
+  </div>
+  
+  <h2 class="topWomen">Women's Fashion</h2>
+  <div class="hotDeals">
+    <div>
+      <img
+        src="https://www.jiomart.com/images/product/original/rv4j2y901e/shubhisha-fashion-women-white-anarkali-printed-kurta-with-palazzo-dupatta-product-images-rv4j2y901e-0-202212151821.jpg?im=Resize=(500,630)"
+      />
+    </div>
+    <div>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvqUJ5mV-c9W2JorUEnzdmhTxU_m6fogNFdw&usqp=CAU"
+      />
+    </div>
+    <div>
+      <img
+        src="https://www.jiomart.com/images/product/original/441141055_red/cartoon-print-t-shirt-pyjama-set-model-441141055_red-0-202207281518.jpg?im=Resize=(330,410)"
+      />
+    </div>
+    <div>
+      <img
+        src="https://www.jiomart.com/images/product/original/rvjpa22tk2/matwali-women-bright-blue-casual-floral-printed-top-and-trouser-co-ords-set-size-3xl-product-images-rvjpa22tk2-0-202308150238.jpg?im=Resize=(330,410)"
+      />
+    </div>
+    <div>
+      <img
+        src="https://trendsthemes.com/wp-content/uploads/2023/03/353cc9a8-f9cb-4cee-a340-4f54f7f5cb991627554878304-MABISH-by-Sonal-Jain-Women-Night-suits-7421627554876963-1_11861ece-de89-454d-946b-ec1fb8b5f1f7.jpg"
+      />
+    </div>
+  </div>
+  
+  <div class="largeImageStart">
+    <div>
+      <img
+        src="https://i.ytimg.com/vi/gewmrVhzhCw/maxresdefault.jpg"
+      />
+    </div>
+    <div>
+      <img
+        src="https://cdn.zoutons.com/images/originals/blog/offerbanner659_1643457264.png"
+      />
+    </div>
+    <div>
+      <img
+        src="https://pbs.twimg.com/media/E4z_r20VIAQbniC.jpg"
+      />
+    </div>
+    <div>
+      <img
+        src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1639059738_App-Colgate-600x350.jpg"
+      />
+    </div>
+  </div>
+  <div class="largeImageStart">
+    <div>
+      <img
+        src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1639059837_scrubz_600x_350px_29-10-2021.jpg"
+      />
+    </div>
+    <div>
+      <img
+        src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1639060001_Snactac_Jiomart_Banner_600x_350.jpg"
+      />
+    </div>
+    <div>
+      <img
+        src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1626259904_wm.jpg"
+      />
+    </div>
+    <div>
+      <img
+        src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1626448037_snackswebmini.jpg"
+      />
+    </div>
+  </div>
+  <div class="largeImageStart"> 
+    <div>
+      <img
+        src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1692209948_3.jpg?im=Resize=(756,376)"
+      />
+    </div>
+    <div>
+      <img
+        src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1637673898_Winter-Health--Immunity-Booster-600x350.jpg"
+      />
+    </div>
+    <div>
+      <img
+        src="https://bhanu-prasad.github.io/jiomart-ui-clone-react/static/media/card12.49298ddd.jpg"
+      />
+    </div>
+    <div>
+      <img
+        src="https://qph.cf2.quoracdn.net/main-qimg-1336242d32b47c2005475c6dd219cec4-pjlq"
+      />
+    </div>
+  </div>
+ 
+  <footer>
+    <div class="footer-1">
+      <div id="footerDiv1">
+        <ul>
+          <li>
+            <h2>MOST POPULAR CATEGORIES</h2>
+          </li>
+          <li><a href="">Staples</a></li>
+          <li><a href="">Beverages</a></li>
+          <li><a href="">Personal Care</a></li>
+          <li><a href="">Home Care</a></li>
+          <li><a href="">Fruits and Vegetables</a></li>
+          <li><a href="">Baby Care</a></li>
+          <li><a href="">Snacks & Branded Foods</a></li>
+          <li><a href="">Dairy & Bakery</a></li>
+        </ul>
+      </div>
+      <div id="footerDiv2">
+        <ul>
+          <li>
+            <h2>CUSTOMER SERVICES</h2>
+          </li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">FAQ</a></li>
+          <li><a href="">Terms and conditions</a></li>
+          <li><a href="">Privacy policy</a></li>
+          <li><a href="">E-waste Policy</a></li>
+        </ul>
+      </div>
+      <div id="footerDiv3">
+        <h2>CONTACT US</h2>
+        <p>
+          WhatsApp us :
+          <a
+            href="https://api.whatsapp.com/send/?phone=917000370003&text=Hi&app_absent=0"
+            target="_blank"
+            >70003 70003</a
+          >
+        </p>
+        <span id="footerspan">
+          <p>Call Us : <a href="">1800 890 1222</a></p>
+          <p>8:00 AM to 8:00 PM,365 days</p>
+        </span>
+        <p>
+          Please note that you are accessing the BETA Version of
+          <a href="">www.jiomart.com</a>
+        </p>
+        <p>
+          Should you encounter any bugs, glitches, lack of functionality,
+          delayed deliveries, billing errors or other problems on the beta
+          website, please email us on <a href="">cs@jiomart.com</a>
+        </p>
+        <h2 style="line-height: 50px">DOWNLOAD APP</h2>
+        <a
+          href="https://play.google.com/store/apps/details?id=com.jpl.jiomart"
+          target="_blank"
+          style="margin-right: 16px"
+        >
+          <img
+            src="https://www.jiomart.com/images/cms/wysiwyg/app-icons/play_store.png"
+            alt="Donwload Jio mart app from Play store"
+          />
+        </a>
+        <a
+          href="https://apps.apple.com/in/app/jiomart/id1522085683"
+          target="_blank"
+        >
+          <img
+            src="https://www.jiomart.com/images/cms/wysiwyg/app-icons/ios_store.png"
+            alt="Donwload Jio mart for IOS app from App store"
+          />
+        </a>
+      </div>
+    </div>
+    <div id="copyRight">
+      <p>
+        Best viewed on Microsoft Edge 81+, Mozilla Firefox 75+, Safari 5.1.5+,
+        Google Chrome 80+
+      </p>
+      <p>© 2021 All rights reserved. Reliance Retail Ltd.</p>
+    </div>
+  </footer>
+ 
+</html>
+<script>
+  
+  function sidenav() {
+    document.getElementById("mysidebar").style.width = "330px";
+  }
+  function closenav() {
+    document.getElementById("mysidebar").style.width = "0";
+  }
+  function home(){
+      window.location.href ="home.html"
+  }
+  function cart(){
+      window.location.href ="cart.html"
+  }
+  function product(){
+      window.location.href="product.html"
+  }
+  function wallet(){
+    window.location.href="wallet.html"
+  }
+  function signin(){
+    window.location.href="sign.html"
+  }
+  function account(){
+      window.location.href="account.html"
+  }
+  function gift(){
+    window.location.href = "GiftStrore.html"
+  }
+  // pjscript
+  var count=1
+    var mbtn=document.querySelector(".plus")
+    var minus=document.querySelector(".minus")
+    var pls=document.querySelector(".pluss")
+    var d=document.querySelector(".btn")
+
+    mbtn.addEventListener("click",add)
+
+    function add(){
+
+        mbtn.textContent=(count=1)
+        mbtn.setAttribute("class","m1")
+        minus.style.display="inline-block"
+        pls.style.display="inline-block"
+        if(count>1){
+            document.querySelector(".plus").removeEventListener("click",add)
+        }
+
+    }
+
+    minus.addEventListener("click",sub)
+
+    function sub(){
+        if(count>0){
+            mbtn.textContent=(count=count-1)
+        }
+
+        if(count==0){
+            document.querySelector(".minus").removeEventListener("click",sub)
+            mbtn.style.width="170px"
+            mbtn.textContent="Add to cart"
+            mbtn.setAttribute("class","plus")
+            minus.style.display="none"
+            pls.style.display="none"
+        }
+    }
+
+    pls.addEventListener("click",plu)
+
+    function plu(){
+        if(count>=2){
+            document.querySelector(".pluss").removeEventListener("click",pls)
+        }
+        if(count<=2)
+        mbtn.textContent=(count=count+1)
+        mbtn.setAttribute("class","m1")
+    }
+    // for 2nd Button
+    var count2=1
+    var mbtn2=document.querySelector(".plus2")
+    var minus2=document.querySelector(".minus2")
+    var pls2=document.querySelector(".pluss2")
+    var d2=document.querySelector(".btn2")
+
+    mbtn2.addEventListener("click",add2)
+
+    function add2(){
+
+        mbtn2.textContent=(count2=1)
+        mbtn2.setAttribute("class","m1")
+        minus2.style.display="inline-block"
+        pls2.style.display="inline-block"
+        if(count2>1){
+            document.querySelector(".plus2").removeEventListener("click",add2)
+        }
+
+    }
+
+    minus2.addEventListener("click",sub2)
+
+    function sub2(){
+        if(count2>0){
+            mbtn2.textContent=(count2=count2-1)
+        }
+
+        if(count2==0){
+            document.querySelector(".minus2").removeEventListener("click",sub2)
+            mbtn2.style.width="170px"
+            mbtn2.textContent="Add to cart"
+            mbtn2.setAttribute("class","plus")
+            minus2.style.display="none"
+            pls2.style.display="none"
+        }
+    }
+
+    pls2.addEventListener("click",plu2)
+
+    function plu2(){
+        if(count2>=2){
+            document.querySelector(".pluss2").removeEventListener("click",pls2)
+        }
+        if(count2<=2)
+        mbtn2.textContent=(count2=count2+1)
+        mbtn2.setAttribute("class","m1")
+    }
+    var person = JSON.parse(localStorage.getItem('UserDetails')) || [] ;
+    document.querySelector('#hello_text').textContent = person[0].Fname || 'Hello Signin';
+    document.querySelector('#signin_text').textContent =person[0].Fname || 'signup';
+  // pjscript-end
+</script>
