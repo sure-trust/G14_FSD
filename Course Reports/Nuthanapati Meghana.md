@@ -23,5 +23,5 @@ Below is a table summarizing the mini projects and final project completed durin
 
 | Description                               | Link                                    |
 |-------------------------------------------|-----------------------------------------|
-| Mini Projects: Lamp Function    | [click here] (https://github.com/meghananuthanapati/G14_FSD/tree/main/Mini%20Projects/MEGHANA%20NUTHANAPATI/mini%20project-1)                       |
-| Final Project: Portfolio        | [click here] (https://github.com/meghananuthanapati/G14_FSD/tree/main/Final%20Capstone%20Project/Nuthanapati%20Meghana)
+| Mini Projects: Lamp Function    | [click here](https://github.com/meghananuthanapati/G14_FSD/tree/main/Mini%20Projects/MEGHANA%20NUTHANAPATI/mini%20project-1)                       |
+| Final Project: Portfolio        | [click here](https://github.com/meghananuthanapati/G14_FSD/tree/main/Final%20Capstone%20Project/Nuthanapati%20Meghana) |
