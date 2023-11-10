@@ -22,36 +22,25 @@ To enroll in the Full Stack Development, please visit the official SURE Trust we
 
 |STUDENTS NAME|LINK|
 |-------------|----|
-|ATHMAKURU KAVYA|[click here](link)|
-|ABHISHT DUBEY|[click here](link)|
-|BUKKAPATNAM SUNIL|[click here](link)|
+|ATHMAKURU KAVYA|[click here](https://github.com/sure-trust/G14_FSD/blob/main/Course%20Reports/Athmakuru%20Kavya.md)|
+|ABHISHT DUBEY|[click here](https://github.com/sure-trust/G14_FSD/blob/main/Course%20Reports/Abhisht%20Dubey.md)|
 |CHENNU GIRISHKUMAR|[click here](https://github.com/sure-trust/G14_FSD/blob/main/Course%20Reports/Chennu%20Kirishkumar.md)|
-|DURGA VATTURI|[click here](link)|
-|HIMANSHU CHOBEY|[click here](link)|
+|HIMANSHU CHOBEY|[click here](https://github.com/sure-trust/G14_FSD/blob/main/Course%20Reports/Himanshu%20choubey.md)|
 |M SURESH|[click here](https://github.com/sure-trust/G14_FSD/blob/main/Course%20Reports/M%20Suresh%20Raju.md)|
-|MEGHANA NUTHANAPATI|[click here](link)|
-|MOHAMMED ISHAQ|[click here](link)|
-|MOHAN G|[click here](link)|
+|MEGHANA NUTHANAPATI|[click here](https://github.com/sure-trust/G14_FSD/blob/main/Course%20Reports/Nuthanapati%20Meghana.md)|
+|MOHAMMED ISHAQ|[click here](https://github.com/sure-trust/G14_FSD/blob/main/Course%20Reports/S%20Mohammed%20Ishaq.md)|
 |MUSALI UMESH KUMAR REDDY|[click here](https://github.com/sure-trust/G14_FSD/blob/main/Course%20Reports/Musali%20Umesh%20Kumar%20Reddy.md)|
-|NV NAVEEN RAJ|[click here](link)|
-|RASHMI N|[click here](link)|
-|SAMBHANA DURGA|[click here](link)|
-|SHAIK SAYED BASHA|[click here](https://github.com/sure-trust/G14_FSD/blob/main/Course%20Reports/Shaik%20Sayed%20Basha.md)|
-|SRI VENKATA RUKMINI|[click here](link)|
-|SUPRAGEETHIKA POLU|[click here](link)|
-|THIRUMALESH POWER|[click here](link)|
+|RASHMI N|[click here](https://github.com/sure-trust/G14_FSD/blob/main/Course%20Reports/Rashmi.N.md)|
+|SAMBHANA DURGA|[click here](https://github.com/sure-trust/G14_FSD/blob/main/Course%20Reports/Durga%20Sambhana.md)|
+|SUPRAGEETHIKA POLU|[click here](https://github.com/sure-trust/G14_FSD/blob/main/Course%20Reports/SUPRAGEETHIKA%20POLU%20G14FSD.md)|
 |USHA SRI REDDY PEDDIREDDY|[click here](https://github.com/sure-trust/G14_FSD/blob/main/Course%20Reports/Peddireddy%20Ushasri%20Reddy.md)|
-|VANDANA CHAPANA|[click here](link)|
+|VANDANA CHAPANA|[click here](https://github.com/sure-trust/G14_FSD/blob/main/Course%20Reports/vandana%20chapana.md)|
 |VARSHITHA REDDY|[click here](https://github.com/sure-trust/G14_FSD/blob/main/Course%20Reports/Nagireddy%20Varshitha%20Reddy.md)|
-
-
-
 
 ## Repository Description
 
 This repository is designed to support the G14 Full Stack Development program at SURE Trust. It follows the below mentioned organization structure:
 
-- *Notes*: An archive of  notes and course materials provided by the trainer.
 - *Mini Projects*: A repository holding code files of the mini projects undertaken during the course.
 - *Final Project*: A comprehensive compilation of code files and resources of the final projects.
 - *Course Reports*: A repository containing course reports authored by students, documenting their individual progress and experiential insights.
